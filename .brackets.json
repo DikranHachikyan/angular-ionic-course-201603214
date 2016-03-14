@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/gulpfile.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-console/www/console-via-logger.js"
+    ]
+}
