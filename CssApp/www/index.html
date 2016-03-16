@@ -36,7 +36,52 @@
          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae quod labore adipisci beatae impedit facilis nulla rem magni asperiores, molestiae maxime harum explicabo, odio earum cupiditate iusto. Omnis, corporis.     
          </p>
-                                                                                
+      <div class="card list-inset">
+          <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input type="text" placeholder="First Name">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Last Name</span>
+              <input type="text" placeholder="Last Name">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">E-mail</span>
+              <input type="email" placeholder="E-mail">
+          </label>
+          <div class="item item-checkbox">
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+              <span class="input-label">I Agree...</span>
+          </div>
+      </div>                                                                               <ion-list class="list-inset">
+          <ion-radio icon="ion-social-facebook" ng-model="social" ng-value="facebook">Facebook</ion-radio>
+          <ion-radio icon="ion-social-twitter" ng-model="social" ng-value="twitter">Twitter</ion-radio>
+          <ion-radio icon="ion-social-googleplus" ng-model="social" ng-value="googleplus">Google+</ion-radio>
+      </ion-list>
+      
+      <ion-list>
+          <div class="item item-toggle">
+              <span class="input-label">Show All</span>
+          
+          <label class="toggle toggle-energized">
+              <input type="checkbox">
+              <span class="track">
+                  <span class="handle"></span>
+              </span>
+          </label>
+          </div>
+      </ion-list>
+      
+      <ion-list>
+          <ion-item class="range">
+              <span class="input-label">Size</span>
+              <i class="icon ion-person"></i>
+              <input type="range" name="size" min="0" max="100" value="30">
+              <i class="icon ion-person-stalker"></i>
+          </ion-item>
+      </ion-list>
       </ion-content>
       
       <ion-footer-bar class="bar-positive">
