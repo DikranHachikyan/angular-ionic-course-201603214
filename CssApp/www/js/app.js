@@ -22,3 +22,17 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+.controller('ListCtrl',[
+    '$scope','$http',
+    function($scope,$http){
+        $http.get('js/cd-db-users-comments.json')
+             .then(function(response){
+                $scope.categories = []; 
+                angular.forEach(response.data.categories, function(value,key){
+                    $scope.categories.push(value);
+                });//for each category in categories
+             })//on success
+             .catch( function(error){
+                console.log('Error',error);
+             });//on error
+}])//List Controller

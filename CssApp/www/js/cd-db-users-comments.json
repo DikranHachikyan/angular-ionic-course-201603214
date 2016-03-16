@@ -1,0 +1,402 @@
+{
+  "catalog" : "Musical CD and DVD Disks",
+  "categories" : {
+    "alternative" : {
+      "description" : "Laboriosam consequuntur tempore quos enim repellat sapiente quas praesentium expedita vel necessitatibus perspiciatis, ullam, voluptatem, id laudantium nemo quae.",
+      "thumbnail" : "images/alternative-category150x150.png",
+      "title" : "Alternative"
+    },
+    "dance" : {
+      "description" : "Tempore illo eos cum placeat id fugiat autem doloremque nisi est totam nihil, delectus eligendi reprehenderit ipsam amet a aliquam similique expedita accusamus neque ab mollitia ratione. Assumenda, vel, consectetur.",
+      "thumbnail" : "images/dance-category150x150.png",
+      "title" : "Dance"
+    },
+    "electronica" : {
+      "description" : "Numquam quos molestiae consequuntur deserunt tenetur porro sit, sequi hic, dolor quisquam qui illo in soluta nam officia corporis nihil, mollitia, dolores accusamus voluptatibus sapiente. Natus delectus, minima quos eius.",
+      "thumbnail" : "images/electronica-category150x150.png",
+      "title" : "Electronica"
+    },
+    "folk" : {
+      "description" : "Dicta ea delectus ad exercitationem magni fugit rerum repellendus quia ex. Aperiam provident error rem incidunt aut delectus. Soluta culpa suscipit, maiores totam quidem, asperiores ipsam!",
+      "thumbnail" : "images/folk-category150x150.png",
+      "title" : "Folk"
+    },
+    "indie" : {
+      "description" : "A, distinctio praesentium est? Cumque natus dolorem rerum assumenda iure ducimus, ipsum explicabo quidem a at consectetur eaque obcaecati molestias deleniti, ullam neque nihil quam quia sint itaque nam minima.",
+      "thumbnail" : "images/indie-category150x150.png",
+      "title" : "Indie"
+    },
+    "other" : {
+      "description" : "Repellat necessitatibus quas maxime eos, sint culpa, magnam veniam doloribus ipsa enim dicta, hic iure quis nulla. Voluptate accusamus quasi suscipit autem velit, non id nam alias? Eos, quas, eum.",
+      "thumbnail" : "images/other-category150x150.png",
+      "title" : "Other"
+    },
+    "pop" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quod doloremque ullam veritatis at sit, totam eaque sint dolore id quo iusto!",
+      "thumbnail" : "images/pop-category150x150.png",
+      "title" : "Pop"
+    },
+    "rock" : {
+      "description" : "Cumque id, officiis fugiat hic sit tempora et ut laudantium. Omnis commodi tempore optio laboriosam magnam tempora porro sit neque quaerat consequatur cum adipisci, excepturi alias, voluptate provident.",
+      "thumbnail" : "images/rock-category150x150.png",
+      "title" : "Rock"
+    }
+  },
+  "collections" : {
+    "alternative" : {
+      "MU501" : {
+        "artist" : "The Arcade Fire",
+        "artwork" : "covers/neon.jpg",
+        "description" : "Second release from the Canadian folk rockers, easily passing the predecessor in scope and depth.",
+        "id" : "MU501",
+        "price" : "3.99",
+        "title" : "Neon Bible"
+      },
+      "MU654" : {
+        "artist" : "Pixies",
+        "artwork" : "covers/surfer_rosa.jpg",
+        "description" : "Typically abrasive selection of guitar and vocal combinationsClassic.",
+        "id" : "MU654",
+        "price" : "3.55",
+        "title" : "Surfer Rosa"
+      },
+      "MU658" : {
+        "artist" : "The Hold Steady",
+        "artwork" : "covers/separation.jpg",
+        "description" : "Play it loud - original take on classic rock. Recommended.",
+        "id" : "MU658",
+        "price" : "4.59",
+        "title" : "Separation Sunday"
+      }
+    },
+    "dance" : {
+      "MU556" : {
+        "artist" : "South Central",
+        "artwork" : "covers/fat.jpg",
+        "description" : "Ground breaking collection from Brighton based team, previously only available on Vinyl.",
+        "id" : "MU556",
+        "price" : "10.9",
+        "title" : "The Owl of Minerva"
+      }
+    },
+    "electronica" : {
+      "MU111" : {
+        "artist" : "Johnny Cash",
+        "artwork" : "covers/live_folsom_prison.jpg",
+        "description" : "Quintessential Cash, recorded live  at Folsom Prison. With his wife June Carter Cash.",
+        "id" : "MU111",
+        "price" : "3.59",
+        "title" : "Live At Folsom Prison"
+      },
+      "MU411" : {
+        "artist" : "Cosmic Rough Riders",
+        "artwork" : "covers/cosmic.jpg",
+        "description" : "Hard to believe this Glasgow group can produce the sunniest West Coast rock and best harmonies since The Byrds",
+        "id" : "MU411",
+        "price" : "5.99",
+        "title" : "Enjoy The Melodic Sunshine"
+      }
+    },
+    "folk" : {
+      "MU327" : {
+        "artist" : "John Martyn",
+        "artwork" : "covers/solid.jpg",
+        "description" : "Landmark album crossing from the folky to free form, jazz improvisation. Conatining the all time great May You Never.",
+        "id" : "MU327",
+        "price" : "5.95",
+        "title" : "Solid Air"
+      },
+      "MU989" : {
+        "artist" : "Joni Mitchell",
+        "artwork" : "covers/blue.jpg",
+        "description" : "Introspective and highly personal, Joni Mitchell bares  her soul on this all time classic.",
+        "id" : "MU989",
+        "price" : "3.99",
+        "title" : "Blue"
+      }
+    },
+    "indie" : {
+      "MU321" : {
+        "artist" : "Stevie Ray Vaughan",
+        "artwork" : "covers/couldnt_stand_weather.jpg",
+        "description" : "The second album from the late and almented Vaughan, consolidating his position as a leading light of modern blues.",
+        "id" : "MU321",
+        "price" : "3.99",
+        "title" : "Couldn't Stand The Weather"
+      }
+    },
+    "other" : {
+      "MU101" : {
+        "artist" : "Pendulum",
+        "artwork" : "covers/hold.jpg",
+        "description" : "Classic debut album",
+        "id" : "MU101",
+        "price" : "4.99",
+        "title" : "Hold Your Colour"
+      },
+      "MU555" : {
+        "artist" : "James Bitemn",
+        "artwork" : "covers/live_appolo.jpg",
+        "description" : "One of the greatest live albums of all time, from a performer at the peak of his career. ",
+        "id" : "MU555",
+        "price" : "6.59",
+        "title" : "Live at the Apollo"
+      },
+      "MU877" : {
+        "artist" : "The Prodigy",
+        "artwork" : "covers/fat.jpg",
+        "description" : "Third studio album, featuring the singles Firestarterand Breathe",
+        "id" : "MU877",
+        "price" : "3.29",
+        "title" : "The Fat Of The Land"
+      }
+    },
+    "pop" : {
+      "MU114" : {
+        "artist" : "Duffy",
+        "artwork" : "covers/rockferry.jpg",
+        "description" : "Debut album from the young Welsh soul siren.",
+        "id" : "MU114",
+        "price" : "2.99",
+        "title" : "Rockferry"
+      },
+      "MU115" : {
+        "artist" : "Elton John",
+        "artwork" : "covers/brickroad.jpg",
+        "description" : "Original double album now single CD release, reckoned by some to be Sir Elton's finest, from rockers like Satuday Night's Alright for Fighting to the classis ballad Candle in the Wind.",
+        "id" : "MU115",
+        "price" : "4.99",
+        "title" : "Goodbye Yellow Brick Road"
+      },
+      "MU116" : {
+        "artist" : "Black Eyed Peas",
+        "artwork" : "covers/elephunk.jpg",
+        "description" : "LA hip hop crew's third album, full throttle funk.",
+        "id" : "MU116",
+        "price" : "2.99",
+        "title" : "Elephunk"
+      }
+    },
+    "rock" : {
+      "MU223" : {
+        "artist" : "Spirit",
+        "artwork" : "covers/spirit.jpg",
+        "description" : "Spitit\\'s final and finest experimental album.",
+        "id" : "MU223",
+        "price" : "6.99",
+        "title" : "Twelve Dreams of Dr Sardonicus"
+      },
+      "MU224" : {
+        "artist" : "Steeleye Span",
+        "artwork" : "covers/below_salt.jpg",
+        "description" : "Maddy Prior leads on this carefully chosen selection of traditional folk songs.",
+        "id" : "MU224",
+        "price" : "3.49",
+        "title" : "Below the Salt"
+      },
+      "MU332" : {
+        "artist" : "Elvis Costello & The Imposters",
+        "artwork" : "covers/delivery.jpg",
+        "description" : "Backed again by the Imposters, this is a concept album featuring a selection of fine guest appearances from the likes of Lucimda Williams.",
+        "id" : "MU332",
+        "price" : "7.99",
+        "title" : "The Delivery Man"
+      },
+      "MU335" : {
+        "artist" : "The Waterboys",
+        "artwork" : "covers/fishermans_blues.jpg",
+        "description" : "Going back to their Celtic roots for these folk rockers, backed by fiddles and acoustic guitars.",
+        "id" : "MU335",
+        "price" : "2.99",
+        "title" : "Fisherman's Blues"
+      },
+      "MU338" : {
+        "artist" : "U2",
+        "artwork" : "covers/achtung.jpg",
+        "description" : "More techno-rock than stadium pop, this album marked a change of direction for U2.",
+        "id" : "MU338",
+        "price" : "1.99",
+        "title" : "Achtung Baby"
+      },
+      "MU506" : {
+        "artist" : "Santana",
+        "artwork" : "covers/fat.jpg",
+        "description" : "Commercial breakthrough album for Santana showcasing their post-Woodstock talent at its best.",
+        "id" : "MU506",
+        "price" : "1.99",
+        "title" : "Abraxas"
+      },
+      "MU777" : {
+        "artist" : "Jon Allen",
+        "artwork" : "covers/dead_mans_suit.jpg",
+        "description" : "Tuneful soft rock debut with some standout lyrics.",
+        "id" : "MU777",
+        "price" : "1.95",
+        "title" : "Dead Man's Suit"
+      }
+    }
+  },
+  "comments" : {
+    "MU111" : {
+      "-KAA15jIk82SLv4rs1wb" : {
+        "date" : 1455105272963,
+        "name" : "Dikran Hachikyan",
+        "text" : "Have no idea who is this man",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      }
+    },
+    "MU501" : {
+      "-KA6q_dzfd9slB2dHUMU" : {
+        "date" : 1455051922329,
+        "name" : "Dikran Hachikyan",
+        "text" : "Consequatur natus necessitatibus suscipit, nisi magni officiis dicta eveniet consectetur cumque molestiae! Aperiam, eaque.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA6qjidDsv5Muc4PgXS" : {
+        "date" : 1455051963583,
+        "name" : "Dikran Hachikyan",
+        "text" : "Impedit recusandae eaque enim praesentium porro, blanditiis aliquam.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA6qkH5BPOq14DnY3QZ" : {
+        "date" : 1455051965854,
+        "name" : "Dikran Hachikyan",
+        "text" : "Impedit recusandae eaque enim praesentium porro, blanditiis aliquam.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA9zTGA4O-dfkB8X1Ft" : {
+        "date" : 1455104582976,
+        "name" : "Dikran Hachikyan",
+        "text" : "My Comment",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA9zaej5ckbCBK4VVVD" : {
+        "date" : 1455104617317,
+        "name" : "Dikran Hachikyan",
+        "text" : "Next comment",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KAA0ttCvtIVot9zH1_y" : {
+        "date" : 1455105220353,
+        "name" : "Dikran Hachikyan",
+        "text" : "Now it seems working",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KAAdC7M-TUYeWJOnLdW" : {
+        "date" : 1455115523183,
+        "name" : "Dikran Hachikyan",
+        "text" : "It's nice",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KAFXlJ7OsHydJQafZA4" : {
+        "date" : 1455197722151,
+        "name" : "John Doe",
+        "text" : "Yes, I know it:)",
+        "uid" : "ec81ab76-aa83-4c7d-84ea-1211e985cf98"
+      },
+      "-KAFXw0v_O5Q4VhOQgtC" : {
+        "date" : 1455197766034,
+        "name" : "John Doe",
+        "text" : "What exactly means neon bible?",
+        "uid" : "ec81ab76-aa83-4c7d-84ea-1211e985cf98"
+      },
+      "-KC0GTwZxEV2loTgXtO4" : {
+        "date" : 1457089015783,
+        "name" : "Dikran Hachikyan",
+        "text" : "Hi",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      }
+    },
+    "MU556" : {
+      "-KA5_-SiZmooS9-VxK0k" : {
+        "date" : 1455030536277,
+        "name" : "Dikran Hachikyan",
+        "text" : "hello",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA6oUtgC4YXy1zgNur0" : {
+        "date" : 1455051374660,
+        "name" : "Dikran Hachikyan",
+        "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente, officiis.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA6ocuA0AV9IuIVXBYB" : {
+        "date" : 1455051411556,
+        "name" : "Dikran Hachikyan",
+        "text" : "Lorem ipsum dolor sit amet, Voluptate aliquid officia odio, enim nesciunt sequi nulla tempore autem eligendi doloribus quis.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA6qGdOK-dZtnJJo6pE" : {
+        "date" : 1455051840284,
+        "name" : "Dikran Hachikyan",
+        "text" : "Consequatur natus necessitatibus suscipit, nisi magni officiis dicta eveniet consectetur cumque molestiae! Aperiam, eaque.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KAAdbvEYFSzQvjCwbxs" : {
+        "date" : 1455115632546,
+        "name" : "Maria Petrova",
+        "text" : "I like it too",
+        "uid" : "72ad08ef-667e-4aec-ad99-ef28429f830d"
+      }
+    },
+    "MU654" : {
+      "-KA6qrG1NAQVAQpjYOC9" : {
+        "date" : 1455051994376,
+        "name" : "Dikran Hachikyan",
+        "text" : "Impedit recusandae eaque enim praesentium porro, blanditiis aliquam.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KA6r2glkreH8i9fzxXO" : {
+        "date" : 1455052045314,
+        "name" : "Dikran Hachikyan",
+        "text" : "Impedit recusandae eaque enim praesentium porro, blanditiis aliquam.",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      },
+      "-KAA0kdFf-qaMtSooHi0" : {
+        "date" : 1455105182469,
+        "name" : "Dikran Hachikyan",
+        "text" : "Very good cd",
+        "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+      }
+    },
+    "MU658" : {
+      "-KAFY5ihYNJlfOv3uZWD" : {
+        "date" : 1455197809869,
+        "name" : "John Doe",
+        "text" : "There is no comments, so I will leave one",
+        "uid" : "ec81ab76-aa83-4c7d-84ea-1211e985cf98"
+      },
+      "-KAFYGzjqMyMEarjUHa2" : {
+        "date" : 1455197856003,
+        "name" : "Maria Petrova",
+        "text" : "Hi John, you are very stupid men",
+        "uid" : "72ad08ef-667e-4aec-ad99-ef28429f830d"
+      }
+    }
+  },
+  "description" : "Musical CD and DVD Disks",
+  "thumbnail" : "",
+  "users" : {
+    "5ece1286-65c9-40ec-96de-71076137a36a" : {
+      "date" : 1454947741118,
+      "email" : "dd@cc.com",
+      "firstname" : "Dikran",
+      "lastname" : "Hachikyan",
+      "uid" : "5ece1286-65c9-40ec-96de-71076137a36a"
+    },
+    "72ad08ef-667e-4aec-ad99-ef28429f830d" : {
+      "date" : 1455115607131,
+      "email" : "maria@cc.com",
+      "firstname" : "Maria",
+      "lastname" : "Petrova",
+      "uid" : "72ad08ef-667e-4aec-ad99-ef28429f830d"
+    },
+    "ec81ab76-aa83-4c7d-84ea-1211e985cf98" : {
+      "date" : 1455197648438,
+      "email" : "john@cc.com",
+      "firstname" : "John",
+      "lastname" : "Doe",
+      "uid" : "ec81ab76-aa83-4c7d-84ea-1211e985cf98"
+    }
+  }
+}

@@ -23,48 +23,27 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
+    <ion-pane ng-controller="ListCtrl">
       <ion-header-bar class="bar-assertive">
           <button class="button icon ion-home"></button>
-          <h1 class="title">Ionic Header</h1>
+          <h1 class="title">Categories</h1>
           <button class="button icon ion-settings"></button>
       </ion-header-bar>
-      <div class="bar bar-subheader">
-          <h2 class="title">Page Subheader</h2>
+      <div class="bar bar-subheader item-input-inset">
+          <label class="item-input-wrapper">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="text" placeholder="Search" ng-model="query">
+          </label>
       </div>
       <ion-content class="padding has-subheader">
-         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae quod labore adipisci beatae impedit facilis nulla rem magni asperiores, molestiae maxime harum explicabo, odio earum cupiditate iusto. Omnis, corporis.     
-         </p>
-         <div class="button-bar">
-             <button class="button button-positive">
-             <i class="icon ion-social-twitter"></i>
-             Twitter
-         </button>
-         <button class="button button-energized">
-             <i class="icon ion-social-facebook"></i>
-             Facebook
-         </button>
-         <button class="button button-assertive ion-social-googleplus icon-left">Google+</button>    
-         </div>
-         
-         <ul class="card">
-             <li class="item item-icon-left">Item 1 <span class="icon ion-magnet"></span></li>
-             <li class="item item-icon-left">Item 2 <span class="icon ion-person"></span></li>
-             <li class="item item-icon-left">Item 3 <span class="icon ion-calendar"></span></li>
-         </ul>   
-         
-        <div class="list">
-             <a href="#" class="item">Item 1</a>
-             <a href="#" class="item">Item 2</a>
-             <a href="#" class="item">Item 3</a>
-         </div> 
-         
-        <ion-list >
-             <ion-item href="#">Item 1</ion-item>
-             <ion-item href="#">Item 2</ion-item>
-             <ion-item href="#">Item 3</ion-item>
-         </ion-list>                                                                             
+         <ion-list>
+             <ion-item class="item-thumbnail-left item-text-wrap" ng-repeat="category in categories|filter:query">
+                 <img ng-src="{{category.thumbnail}}" alt="{{catgory.title}}">
+                 <h2>{{category.title}}</h2>
+                 <p>{{category.description | limitTo:150}} {{category.description.length > 150? '&hellip;':''}}</p>
+             </ion-item>
+              
+         </ion-list>
       </ion-content>
       
       <ion-footer-bar class="bar-positive">
