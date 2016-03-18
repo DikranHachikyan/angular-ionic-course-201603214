@@ -25,14 +25,34 @@ angular.module('starter', ['ionic'])
 .controller('ListCtrl',[
     '$scope','$http',
     function($scope,$http){
-        $http.get('js/cd-db-users-comments.json')
+        $scope.loadItems = function(){
+          $http.get('js/cd-db-users-comments.json')
              .then(function(response){
                 $scope.categories = []; 
                 angular.forEach(response.data.categories, function(value,key){
                     $scope.categories.push(value);
                 });//for each category in categories
+              
+                //генерираме събитие за да спрем анимацията на зареждането
+                $scope.$broadcast('scroll.refreshComplete');
              })//on success
              .catch( function(error){
                 console.log('Error',error);
-             });//on error
+             });//on error  
+        }// load Items form json file
+        
+         $scope.loadItems();//първоначално зареждане 
+
+        $scope.reload = function(){
+             $scope.loadItems();
+         }; //reload items 
+       $scope.moveItem = function(cat, $fromIdx, $toIdx){
+           console.log('from:' + $fromIdx + ' ' + $toIdx);
+           $scope.categories.splice($fromIdx, 1); //премахваме елемента на индекс fromIdx
+           $scope.categories.splice($toIdx, 0, cat);
+       };//move item 
+       $scope.deleteItem = function(cat){
+         $scope.categories.splice($scope.categories.indexOf(cat),1);        
+       };//delete item 
+        
 }])//List Controller
