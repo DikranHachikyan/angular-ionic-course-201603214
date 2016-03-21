@@ -11,6 +11,22 @@
         "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/lib/ionic/js/angular/angular-resource.min.js",
         "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/lib/ionic/js/angular/angular-resource.js",
         "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/lib/ionic/js/angular/angular.js",
-        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/lib/ionic/js/angular/angular-animate.min.js"
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/lib/ionic/js/angular/angular-animate.min.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/www/lib/ionic/js/angular/angular-sanitize.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/plugins/cordova-plugin-device/src/windows/DeviceProxy.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/plugins/cordova-plugin-device/src/ubuntu/device.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/FirstApp/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/hooks/after_prepare/010_add_platform_class.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/com.ionic.keyboard/src/blackberry10/index.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-console/www/logger.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-device/src/ubuntu/device.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-console/tests/tests.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/plugins/cordova-plugin-device/src/windows/DeviceProxy.js"
     ]
 }

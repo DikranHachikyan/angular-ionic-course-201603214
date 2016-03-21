@@ -22,6 +22,57 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+.config(['$stateProvider','$urlRouterProvider',
+        function($stateProvider,$urlRouterProvider){
+            $urlRouterProvider.otherwise('/shop/home');
+            
+            $stateProvider
+                .state('musicshop', {
+                    url:'/shop',
+                    abstract:true,
+                    templateUrl: 'templates/side-menus.html'
+               })//abstract view shop
+               .state('musicshop.home', {
+                    url:'/home',
+                    views: {
+                        'content':{
+                            templateUrl:'templates/welcome.html'
+                        }// view content
+                    }//views
+               })//view home
+               .state('musicshop.categories', {
+                    url:'/categories',
+                    views:{
+                        'content':{
+                            templateUrl:'templates/categories.html',
+                            controller:'ListCtrl'
+                        }//view content
+                    }//views
+               })//view categories
+               .state('musicshop.items', {
+                    url:'/:catid/items',
+                    views: {
+                        'content':{
+                            templateUrl:'templates/items.html',
+                            controller:'ItemsCtrl'
+                        }// view content
+                    }//views items in category
+               });
+}]) //states
+.controller('ItemsCtrl',[
+             '$scope','$http','$stateParams',
+             function($scope,$http,$stateParams){
+             console.log('category id:', $stateParams.catid);
+                 $http.get('js/cd-db-users-comments.json')
+                      .then(function(response){
+                            //response.data.collections["alternative"]
+                            //eval("response.data.collections." + $stateParams.catid)
+                           $scope.items = response.data.collections[$stateParams.catid]  
+                     })//on success
+                     .catch(function(error){
+                        console.log('Error:',error);
+                 });// on error
+}])//Items Ctrl
 .controller('ListCtrl',[
     '$scope','$http',
     function($scope,$http){
@@ -30,6 +81,7 @@ angular.module('starter', ['ionic'])
              .then(function(response){
                 $scope.categories = []; 
                 angular.forEach(response.data.categories, function(value,key){
+                    value.id = key;
                     $scope.categories.push(value);
                 });//for each category in categories
               
