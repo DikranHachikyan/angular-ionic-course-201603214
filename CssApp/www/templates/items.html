@@ -1,8 +1,10 @@
-<ion-view view-title="Items">
+<ion-view view-title="{{page_title}}">
     <ion-content class="padding">
         <ion-list>
-            <ion-item ng-repeat="itm in items">
-                {{itm.title}}
+            <ion-item class="item-thumbnail-left" ng-repeat="itm in items" href="#/shop/category/{{catid}}/item/{{itm.id}}">
+                <img ng-src="{{itm.artwork}}" alt="{{itm.title}}">
+                <h2>{{itm.title}} - {{itm.artist}}</h2>
+                <p>{{itm.description}}</p>
             </ion-item>
         </ion-list>
     </ion-content>

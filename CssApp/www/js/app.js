@@ -57,21 +57,78 @@ angular.module('starter', ['ionic'])
                             controller:'ItemsCtrl'
                         }// view content
                     }//views items in category
+               })
+               .state('musicshop.item', {
+                  url:'/category/:catid/item/:itemid',
+                  views:{
+                      'content':{
+                          templateUrl:'templates/item.html',
+                          controller:'ItemsCtrl'
+                      }//view item content
+                  }//item views
+               })
+               .state('users',{
+                   url:'/user',
+                   abstract: true,
+                   templateUrl: 'templates/tabs-abstract.html'
+               })
+               .state('users.login',{
+                   url:'/login', // #/user/login
+                   views:{
+                       'user-login':{
+                           templateUrl:'templates/login.html'
+                       }//user login template
+                   }//login views
+               })
+               .state('users.register',{
+                    url:'/user-registration',
+                    views:{
+                        'registration':{
+                            templateUrl:'templates/registration.html'
+                        }//registration template
+                    }//registration views
                });
 }]) //states
 .controller('ItemsCtrl',[
-             '$scope','$http','$stateParams',
-             function($scope,$http,$stateParams){
-             console.log('category id:', $stateParams.catid);
-                 $http.get('js/cd-db-users-comments.json')
+             '$scope','$http','$state',
+             function($scope,$http,$state){
+             //console.log('state:', $state);
+                  var catid = $state.params.catid;
+                  var itemid = $state.params.itemid;
+                 $scope.loadItems = function(cid){
+                    $http.get('js/cd-db-users-comments.json')
                       .then(function(response){
                             //response.data.collections["alternative"]
                             //eval("response.data.collections." + $stateParams.catid)
-                           $scope.items = response.data.collections[$stateParams.catid]  
+                           $scope.page_title = response.data.categories[cid].title;
+                           $scope.catid = cid;
+                           $scope.items = response.data.collections[cid]  
                      })//on success
                      .catch(function(error){
                         console.log('Error:',error);
-                 });// on error
+                 });// on error    
+                 };//load items form category
+                 
+                 $scope.loadSingleItem = function( cid,id ){
+                    $http.get('js/cd-db-users-comments.json')
+                      .then(function(response){
+                                //collections.alternative.MU555
+                           $scope.item = response.data.collections[cid][id]; 
+                           //console.log('item:', $scope.item);
+                     })//on success
+                     .catch(function(error){
+                        console.log('Error:',error);
+                 });// on error    
+                 };//load single item data
+                 
+                if( catid && itemid )
+                {
+                    $scope.loadSingleItem(catid, itemid);
+                }
+                else
+                {
+                    $scope.loadItems(catid);
+                }
 }])//Items Ctrl
 .controller('ListCtrl',[
     '$scope','$http',

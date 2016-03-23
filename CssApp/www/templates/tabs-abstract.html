@@ -1,0 +1,14 @@
+<ion-nav-bar class="bar-positive">
+    <ion-nav-back-button></ion-nav-back-button>
+    <ion-nav-buttons side="left">
+        <a class="button button-icon ion-home" ng-href="#/shop/home"></a>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-tabs class="tabs-striped tabs-icon-top tabs-background-positive tabs-color-light">
+    <ion-tab title="Login" icon="ion-log-in" href="#/user/login">
+        <ion-nav-view name="user-login"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="Register" icon="ion-person-add" href="#/user/user-registration">
+        <ion-nav-view name="registration"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
