@@ -1,9 +1,25 @@
 <ion-view >
+  <ion-nav-title>{{item.title}}</ion-nav-title>
    <ion-content class="padding">
-    <ion-list>
-        <ion-item>
-            {{item.title}}
-        </ion-item>
-    </ion-list>   
+    <div class="row">
+        <div class="col">
+            <img ng-src="{{item.artwork}}" alt="{{item.title}}">
+        </div>
+    </div>
+    <div class="row">       
+        <div class="col">
+            <h3>Artist: {{item.artist}}</h3>
+        </div>
+    </div>    
+    <div class="row">        
+        <div class="col">
+            <p>{{item.description}}</p>
+        </div>
+    </div>    
+    <div class="row">        
+        <div class="col">
+            <h4>Price:{{item.price}}</h4>
+        </div>    
+    </div>   
    </ion-content>
 </ion-view>
