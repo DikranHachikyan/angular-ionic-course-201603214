@@ -1,5 +1,17 @@
 <ion-view view-title="User Login">
     <ion-content class="padding">
-        <h3>Login Form</h3>
+      <ion-list class="card">
+        <ion-item class="item-input">
+            <input type="text" placeholder="E-mail" ng-model="user.email" ng-required="true">
+        </ion-item>
+        <ion-item class="item-input">
+            <input type="password" placeholder="Password" ng-model="user.password1" ng-required="true">
+        </ion-item>
+        <ion-item ng-show="message">
+            <p>{{message}}</p>
+        </ion-item>
+      </ion-list>
+      
+      <button class="button button-positive" ng-click="login()">Login</button>
     </ion-content>
 </ion-view>

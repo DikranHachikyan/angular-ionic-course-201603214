@@ -1,4 +1,55 @@
-app.factory('DataService',[
+app
+.factory('UserService',[
+    '$rootScope','$firebaseObject','$firebaseAuth','$state','FIREBASE_URL',
+    function($rootScope,$firebaseObject,$firebaseAuth,$state,FIREBASE_URL){
+        var ref= new Firebase(FIREBASE_URL);
+        var authObj = $firebaseAuth(ref);
+        
+        var retObj = {
+            loginUser : function (user){
+                        
+                        authObj.$authWithPassword({
+                             'email': user.email,
+                             'password':user.password1
+                         })
+                         .then(function(userData){
+                             console.log('Uid:',userData.uid);
+                            
+                             $rootScope.message = "Hi, ";
+                             $state.go('musicshop.categories');
+                         })
+                         .catch( function(error){
+                             console.log('Error:', error);
+                         })//on error
+            }//user login 
+            , addUser : function (user){
+                     //create a new user with email and password
+                     authObj.$createUser({
+                         'email': user.email,
+                         'password':user.password1
+                     }) //create new user
+                     .then( function(userData){
+                         var userObj = ref.child('users').child(userData.uid);
+                         //add user data to the database
+                         userObj.set({
+                             'uid': userData.uid,
+                             'email': user.email,
+                             'firstname': user.firstname,
+                             'lastname': user.lastname,
+                             'created': Firebase.ServerValue.TIMESTAMP
+                         });
+                         //login the user
+                         retObj.loginUser(user);
+                     })//if success
+                     .catch(function(error){
+                         console.log('Error:', error);
+                     })//on error
+            }//add new user
+        };
+        
+        return retObj;
+}])
+.factory('DataService',[
     '$rootScope','$firebaseObject','FIREBASE_URL',
     function($rootScope,$firebaseObject,FIREBASE_URL){
         var ref = new Firebase(FIREBASE_URL);

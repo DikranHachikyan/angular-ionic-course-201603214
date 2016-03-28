@@ -1,4 +1,46 @@
-app.controller('ItemsCtrl',[
+app
+.controller('UserCtrl',['$scope','UserService',
+            function($scope,UserService){
+    $scope.user = {
+        fistname:'',
+        lastname:'',
+        emil:'',
+        password1:'',
+        password2:''
+    };
+    $scope.message='';
+                
+    $scope.login = function(){
+        if( $scope.user.email !='' && $scope.user.password1 != '')
+        {    
+            UserService.loginUser($scope.user);
+        }
+        else
+        {
+            $scope.message = 'Required field is not set!';
+        }
+    };//login            
+    $scope.register = function(){
+        console.log('UserData:',$scope.user);
+        var usr = $scope.user;
+        
+        if( 
+            usr.password1 != '' && 
+            usr.password2 != '' && 
+            usr.password1 == usr.password2 &&
+            usr.email != '' && 
+            usr.lastname != ''
+          )
+        {
+            UserService.addUser(usr);
+        }
+        else
+        {    
+            $scope.message = "Required field is not set";
+        }
+    };// register user
+}])
+.controller('ItemsCtrl',[
              '$scope','$state','DataService',
              function($scope,$state,DataService){
              //console.log('state:', $state);

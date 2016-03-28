@@ -1,5 +1,26 @@
 <ion-view view-title="User Registration">
-    <ion-content class="padding">
-        <h3>Registration Form</h3>
-    </ion-content>
+<ion-content class="padding">
+    <ion-list class="card">
+        <ion-item class="item-input">
+            <input type="text" placeholder="First Name" ng-model="user.firstname" ng-required="true">
+        </ion-item>
+        <ion-item class="item-input">
+            <input type="text" placeholder="Last Name" ng-model="user.lastname" ng-required="true">
+        </ion-item>
+        <ion-item class="item-input">
+            <input type="email" placeholder="E-mail" ng-model="user.email" ng-required="true">
+        </ion-item>
+        <ion-item class="item-input">
+            <input type="password" placeholder="Password" ng-model="user.password1" ng-required="true">
+        </ion-item>
+        <ion-item class="item-input">
+            <input type="password" placeholder="Password" ng-model="user.password2" ng-required="true">
+        </ion-item>
+        <ion-item ng-show="message">
+            <p>{{message}}</p>
+        </ion-item>
+    </ion-list>
+    
+    <button class="button button-positive" ng-click="register()">Send</button>
+</ion-content>
 </ion-view>

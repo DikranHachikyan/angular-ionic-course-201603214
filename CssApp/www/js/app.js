@@ -77,7 +77,8 @@ var app = angular.module('starter', ['ionic','firebase'])
                    url:'/login', // #/user/login
                    views:{
                        'user-login':{
-                           templateUrl:'templates/login.html'
+                           templateUrl:'templates/login.html',
+                            controller:'UserCtrl'
                        }//user login template
                    }//login views
                })
@@ -85,7 +86,8 @@ var app = angular.module('starter', ['ionic','firebase'])
                     url:'/user-registration',
                     views:{
                         'registration':{
-                            templateUrl:'templates/registration.html'
+                            templateUrl:'templates/registration.html',
+                            controller:'UserCtrl'
                         }//registration template
                     }//registration views
                });
