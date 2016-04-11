@@ -6,6 +6,13 @@ app
         var authObj = $firebaseAuth(ref);
         
         var retObj = {
+            logout: function(){
+                    delete $rootScope.currentUser;
+                    authObj.$unauth();
+            }, //logout
+            requireLogin : function(){
+                    return authObj.$requireAuth();
+            }, //require user authentication
             loginUser : function (user){
                         
                         authObj.$authWithPassword({
@@ -13,10 +20,19 @@ app
                              'password':user.password1
                          })
                          .then(function(userData){
-                             console.log('Uid:',userData.uid);
-                            
-                             $rootScope.message = "Hi, ";
-                             $state.go('musicshop.categories');
+                             var usrObj = $firebaseObject(ref.child('users').child(userData.uid));
+                             usrObj.$loaded()
+                                   .then(function(data){
+                                        console.log('User:', data)
+                                        $rootScope.currentUser = data;
+                                        $state.go('musicshop.categories');
+                                  })//on success
+                                    .catch(function(error){
+                                         console.log('Error:', error);
+                                  });//on error
+                             
+                             
+                             
                          })
                          .catch( function(error){
                              console.log('Error:', error);

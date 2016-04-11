@@ -61,6 +61,11 @@ var app = angular.module('starter', ['ionic','firebase'])
                })
                .state('musicshop.item', {
                   url:'/category/:catid/item/:itemid',
+                  resolve: {
+                    'itemContent': ['UserService',function(UserService){
+                        return UserService.requireLogin();
+                    }]  
+                  },
                   views:{
                       'content':{
                           templateUrl:'templates/item.html',
@@ -92,3 +97,16 @@ var app = angular.module('starter', ['ionic','firebase'])
                     }//registration views
                });
 }]) //states
+.run(['$rootScope','$state',function($rootScope,$state){
+      $rootScope.$on('$stateChangeError', 
+        function(event, toState, toParams,fromState, fromParams,error){
+          if( error === 'AUTH_REQUIRED')
+          {
+            $state.go('users.login');
+          }
+      }); //on state change error
+}])
+//============================================================================================
+function empty(value){
+    return value === '' || value === 0 || value === undefined || value ===null;
+}

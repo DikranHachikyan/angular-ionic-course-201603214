@@ -1,43 +1,30 @@
 app
-.controller('UserCtrl',['$scope','UserService',
+.controller('CommentsCtrl', [
+    '$scope','DataService', 
+    function($scope,DataService){
+        console.log('Comments from Users');
+}])
+.controller('UserCtrl',[
+            '$scope','UserService',
             function($scope,UserService){
-    $scope.user = {
-        fistname:'',
-        lastname:'',
-        emil:'',
-        password1:'',
-        password2:''
-    };
-    $scope.message='';
-                
-    $scope.login = function(){
-        if( $scope.user.email !='' && $scope.user.password1 != '')
+    $scope.logout = function(){
+            console.log('user logout');
+            UserService.logout();
+    }; //logout  
+    $scope.login = function( user){
+        if( !empty(user.password1) && !empty(user.email))
         {    
-            UserService.loginUser($scope.user);
+            UserService.loginUser(user);
         }
-        else
-        {
-            $scope.message = 'Required field is not set!';
-        }
+       
     };//login            
-    $scope.register = function(){
-        console.log('UserData:',$scope.user);
-        var usr = $scope.user;
+    $scope.register = function(user){
         
-        if( 
-            usr.password1 != '' && 
-            usr.password2 != '' && 
-            usr.password1 == usr.password2 &&
-            usr.email != '' && 
-            usr.lastname != ''
-          )
+        if( !empty(user.email) && !empty(user.password1) && user.password2 === user.password1 )
         {
-            UserService.addUser(usr);
-        }
-        else
-        {    
-            $scope.message = "Required field is not set";
-        }
+            UserService.addUser(user);
+         }
+       
     };// register user
 }])
 .controller('ItemsCtrl',[

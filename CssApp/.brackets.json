@@ -1,0 +1,17 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/lib/ionic/js/angular/angular.min.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/cordova/lib/device.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/cordova-js-src/plugin/android/app.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/cordova-js-src/android/promptbasednativeapi.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/cordova-js-src/android/nativeapiprovider.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular-ui/angular-ui-router.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular/angular-sanitize.min.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular/angular-animate.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/www/js/services.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular/angular-resource.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular/angular.js",
+        "/home/wizard/vFolders/public_html/angularjs-projects/angularjs-ionic-webapp-online-20160314/projects/CssApp/platforms/android/build/intermediates/assets/release/www/lib/ionic/js/angular/angular-animate.min.js"
+    ]
+}
